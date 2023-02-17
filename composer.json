@@ -1,0 +1,10 @@
+{
+    "name": "sanfair/php-upgrade",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Sanfair\\PhpUpgrade\\": "src/"
+        }
+    },
+    "require": {}
+}

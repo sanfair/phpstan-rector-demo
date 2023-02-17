@@ -27,3 +27,14 @@ $object->key = 'value';
 if (array_key_exists('key', $object)) {
     echo $object->key, "\n";
 }
+
+class Old implements Serializable {
+
+    public function serialize()
+    {
+    }
+
+    public function unserialize($data)
+    {
+    }
+}

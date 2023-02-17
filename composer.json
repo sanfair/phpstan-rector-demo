@@ -6,5 +6,16 @@
             "Sanfair\\PhpUpgrade\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "phpstan/phpstan": "^1.9",
+        "phpstan/extension-installer": "^1.2"
+    },
+    "require-dev": {
+        "phpstan/phpstan-deprecation-rules": "^1.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    }
 }

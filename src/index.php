@@ -2,7 +2,11 @@
 
 // Comparison checks.
 
-if (0 == "foo") {
+/** @var string $string */
+$string = "foo";
+$zero = 0;
+
+if ($zero == $string) {
     $output = "0 is foo";
 }
 else {

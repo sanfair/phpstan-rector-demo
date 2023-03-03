@@ -1,4 +1,4 @@
-version: "3"
+version: "3.9"
 
 services:
 #  mariadb:
@@ -28,6 +28,7 @@ services:
 
   php:
     image: wodby/php:$PHP_TAG
+    pull_policy: missing
     container_name: "${PROJECT_NAME}_php"
     environment:
       SSMTP_MAILHUB: mailhog:1025

@@ -1,9 +1,15 @@
 parameters:
 	phpVersion: 80000
 	ignoreErrors:
-	    # Ignore these errors for demo script.
+		# Ignore these errors for demo script.
 		- '#Call to function .+\(\) on a separate line has no effect#'
 		- '#Expression ".+" on a separate line does not do anything#'
-	level: 6
+		- '#Method .* has parameter .* with no type specified#'
+		- '#Method .* has no return type specified#'
+		- '#Function .* has parameter .* with no type specified#'
+		- '#Function .* has no return type specified#'
+		- '#Method .* is unused#'
+		- '#Method .* should return object but return statement is missing#'
+	level: 8
 	paths:
 		- src

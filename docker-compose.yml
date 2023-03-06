@@ -1,11 +1,10 @@
 version: "3.9"
 
 services:
-  php:
-#    image: php:7.1-fpm-alpine3.10
-    image: wodby/php:$PHP_TAG
+  php_7_1:
+    image: php:$PHP_TAG_7_1
     pull_policy: missing
-    container_name: "${PROJECT_NAME}_php"
+    container_name: "${PROJECT_NAME}_php_7_1"
 ## Read instructions at https://wodby.com/docs/stacks/php/local/#xdebug
 #      PHP_XDEBUG: 1
 #      PHP_XDEBUG_MODE: debug
@@ -22,6 +21,27 @@ services:
 #    - backend:/var/www/html
 ## For XHProf and Xdebug profiler traces
 #    - files:/mnt/files
+
+  php_7_2:
+    image: wodby/php:$PHP_TAG_7_2
+    pull_policy: missing
+    container_name: "${PROJECT_NAME}_php_7_2"
+    volumes:
+    - ./:/var/www/html:cached
+
+  php_7_4:
+    image: wodby/php:$PHP_TAG_7_4
+    pull_policy: missing
+    container_name: "${PROJECT_NAME}_php_7_4"
+    volumes:
+    - ./:/var/www/html:cached
+
+  php_8_0:
+    image: wodby/php:$PHP_TAG_8_0
+    pull_policy: missing
+    container_name: "${PROJECT_NAME}_php_8_0"
+    volumes:
+    - ./:/var/www/html:cached
 
 #x-mutagen:
 #  sync:

@@ -1,5 +1,9 @@
 parameters:
-	phpVersion: 70400
+	phpVersion: 80000
+	ignoreErrors:
+	    # Ignore these errors for demo script.
+		- '#Call to function .+\(\) on a separate line has no effect#'
+		- '#Expression ".+" on a separate line does not do anything#'
 	level: 6
 	paths:
 		- src

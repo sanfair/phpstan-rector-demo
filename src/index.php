@@ -70,8 +70,8 @@ $array = ['test'];
 $array{0};
 
 /** Nested ternary operators without explicit parentheses */
-/** @var mixed $a */ /* $a = 1; */
-/** @var mixed $b */ /* $b = 2; */
+/** @var mixed $a */  $a = 1;
+/** @var mixed $b */  $b = 2;
 $value = $a ? $b : $a ?: null;
 
 // <---- 7.3 ---->
